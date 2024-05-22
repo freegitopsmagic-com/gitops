@@ -48,3 +48,9 @@ resource "github_team_repository" "team_developers" {
   repository = github_repository.repo.name
   permission = "maintain"
 }
+
+resource "github_team_repository" "team_livestream" {
+  team_id    = var.team_livestream_id
+  repository = github_repository.repo.name
+  permission = "pull"
+}
