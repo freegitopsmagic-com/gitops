@@ -65,6 +65,9 @@ variable "team_developers_id" {
 variable "team_admins_id" {
   type = string
 }
+variable "team_livestream_id" {
+  type = string
+}
 
 variable "topics" {
   type    = list(string)
