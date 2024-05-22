@@ -9,3 +9,9 @@ resource "github_team" "developers" {
   description = "developers using the kubefirst plaftform"
   privacy     = "closed"
 }
+
+resource "github_team" "livestream" {
+  name        = "livestream"
+  description = "livestreamers using the kubefirst plaftform"
+  privacy     = "closed"
+}
