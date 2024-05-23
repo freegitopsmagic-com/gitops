@@ -1,7 +1,7 @@
 module "kubefirst_demo_bot" {
   source = "../modules/user/github"
 
-  acl_policies            = ["default"]
+  acl_policies            = ["livestream"]
   email                   = "kubefirst-demo-bot@kubefirst.io"
   first_name              = "kubefirst"
   github_username         = "kubefirst-demo-bot"
