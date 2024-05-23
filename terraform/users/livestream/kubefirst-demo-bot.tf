@@ -11,3 +11,4 @@ module "kubefirst_demo_bot" {
   user_disabled           = false
   userpass_accessor       = data.vault_auth_backend.userpass.accessor
 }
+
