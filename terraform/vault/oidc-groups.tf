@@ -31,3 +31,20 @@ resource "vault_identity_group" "admins" {
     version = "2"
   }
 }
+
+resource "vault_identity_group" "livestream" {
+  name     = "livestream"
+  type     = "internal"
+  policies = ["livestream"]
+
+  # `resource "vault_identity_group_member_entity_ids"` manages this in `livestream.tf` 
+  lifecycle {
+    ignore_changes = [
+      member_entity_ids
+    ]
+  }
+
+  metadata = {
+    version = "2"
+  }
+}
