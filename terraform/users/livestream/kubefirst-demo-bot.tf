@@ -5,7 +5,7 @@ module "kubefirst_demo_bot" {
   email                   = "kubefirst-demo-bot@kubefirst.io"
   first_name              = "kubefirst"
   github_username         = "livestream-ones-github-username"
-  team_id                 = data.github_team.livestreams.id
+  team_id                 = data.github_team.livestream.id
   last_name               = "demobot"
   username                = "kdemobot"
   user_disabled           = false
