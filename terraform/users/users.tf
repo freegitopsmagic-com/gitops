@@ -68,3 +68,16 @@ resource "vault_identity_group_member_entity_ids" "admins_membership" {
 #   member_entity_ids = module.developers.vault_identity_entity_ids
 #   group_id = data.vault_identity_group.developers.group_id
 # }
+
+data "vault_identity_group" "livestream" {
+  group_name = "livestream"
+}
+
+module "livestream" {
+  source = "./livestream"
+}
+
+resource "vault_identity_group_member_entity_ids" "livestream_membership" {
+  member_entity_ids = module.livestream.vault_identity_entity_ids
+  group_id = data.vault_identity_group.livestream.group_id
+}
