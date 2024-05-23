@@ -4,7 +4,7 @@ module "kubefirst_demo_bot" {
   acl_policies            = ["default"]
   email                   = "kubefirst-demo-bot@kubefirst.io"
   first_name              = "kubefirst"
-  github_username         = "livestream-ones-github-username"
+  github_username         = "kubefirst-demo-bot"
   team_id                 = data.github_team.livestream.id
   last_name               = "demobot"
   username                = "kdemobot"
