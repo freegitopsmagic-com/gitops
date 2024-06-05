@@ -12,8 +12,8 @@ spec:
     name: in-cluster
   project: default
   source:
-    chart: stormforge
-    repoURL: oci://registry.stormforge.io/library/stormforge-agent
+    chart: stormforge-agent
+    repoURL: registry.stormforge.io/library
     targetRevision: 2.10.8
     helm:
       releaseName: stormforge
@@ -21,7 +21,7 @@ spec:
         clusterName: mgmt
         stormforge:
           address: https://api.stormforge.io/
-          manageAuthSecret: false
+        manageAuthSecret: false
   syncPolicy:
     automated:
       prune: true
