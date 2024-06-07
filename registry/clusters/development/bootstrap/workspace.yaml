@@ -1,5 +1,6 @@
 apiVersion: tf.upbound.io/v1beta1
 kind: Workspace
+deletionPolicy: Orphan
 metadata:
   name: development-bootstrap
   annotations:
