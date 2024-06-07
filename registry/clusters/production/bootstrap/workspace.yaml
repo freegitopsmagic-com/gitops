@@ -1,12 +1,12 @@
 apiVersion: tf.upbound.io/v1beta1
 kind: Workspace
-deletionPolicy: Orphan
 metadata:
   name: production-bootstrap
   annotations:
     argocd.argoproj.io/sync-wave: "10"
     crossplane.io/external-name: production-bootstrap
 spec:
+  deletionPolicy: Orphan
   providerConfigRef:
     name: production
   forProvider:
